@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-08-22T09:02:03.714Z</updated>
+  <updated>2021-08-22T14:31:16.216Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>8月22日 晚 小记</title>
+    <link href="http://example.com/2021/08/22/8%E6%9C%8822%E6%97%A5%20%E5%B0%8F%E8%AE%B0/"/>
+    <id>http://example.com/2021/08/22/8%E6%9C%8822%E6%97%A5%20%E5%B0%8F%E8%AE%B0/</id>
+    <published>2021-08-22T14:23:39.000Z</published>
+    <updated>2021-08-22T14:31:16.216Z</updated>
+    
+    <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="8月22日-晚-小记"><a class="markdownIt-Anchor" href="#8月22日-晚-小记"></a> 8月22日 晚 小记</h1><p>突然就要忙起来了，好多事加到一起了，烦ing~</p><p>应该提前把一些东西弄好的。</p><p>静静的动态数据一直拖着没弄好，有点烦。。我拖延症又犯了</p><p>专利-论文-光是一项都头大啊。。</p><p>好想工作而不是搞科研，费脑子的事情真的真的难顶~</p><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kity@2.0.4/dist/kity.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/kityminder-core@1.4.50/dist/kityminder.core.min.js"></script><script defer="true" type="text/javascript" src="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.4.0/dist/mindmap.min.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/hexo-simple-mindmap@0.4.0/dist/mindmap.min.css">]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="Diary" scheme="http://example.com/categories/Diary/"/>
+    
+    
+    <category term="Essay" scheme="http://example.com/tags/Essay/"/>
+    
+  </entry>
   
   <entry>
     <title>Zotero和Endnote中文献的互相导入</title>
