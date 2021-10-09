@@ -53,6 +53,12 @@
 
 <!-- 自定义样式保持在最底部 -->
 
+  
+<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/bynotes/texiao/source/css/shubiao.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/bynotes/texiao/source/css/gundongtiao.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+
+
 
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
@@ -253,7 +259,7 @@
             <h1 style="display: none">8月19日 Hexo Blog成功上车</h1>
             
             <div class="markdown-body">
-              <h1 id="8月19日-hexo个人blog成功上车"><a class="markdownIt-Anchor" href="#8月19日-hexo个人blog成功上车"></a> 8月19日 Hexo个人Blog成功上车</h1>
+              <link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="8月19日-hexo个人blog成功上车"><a class="markdownIt-Anchor" href="#8月19日-hexo个人blog成功上车"></a> 8月19日 Hexo个人Blog成功上车</h1>
 <p>​		今天晚上闲着没事，跟着教程采用Hexo框架搭建了属于自己的博客，想写写自己的所思所想，记录下自己的生活。</p>
 <p>​		很早就有搭建个人Blog的想法了，一致拖着没有弄，今天把结构力学的小论文写完了，正好有时间，所以就在Google了一下，看到Hexo框架搭建静态博客很方便也很便捷，所以就试了下。弄到凌晨一点，终于弄好了，感觉还不错。</p>
 <p><img src="https://raw.githubusercontent.com/Eliasinworld/upload_images/main/img/202108201624528.jpg" srcset="/img/loading.gif" lazyload alt="" /></p>
@@ -398,6 +404,45 @@
   
 
   
+
+  <div>
+    <span id="timeDate">载入天数...</span>
+    <span id="times">载入时分秒...</span>
+    <script>
+    var now = new Date();
+    function createtime(){
+        var grt= new Date("08/19/2021 00:00:00");//此处修改你的建站时间或者网站上线时间
+        now.setTime(now.getTime()+250);
+        days = (now - grt ) / 1000 / 60 / 60 / 24;
+        dnum = Math.floor(days);
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum);
+        hnum = Math.floor(hours);
+        if(String(hnum).length ==1 ){
+            hnum = "0" + hnum;
+        }
+        minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+        mnum = Math.floor(minutes);
+        if(String(mnum).length ==1 ){
+                  mnum = "0" + mnum;
+        }
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+        snum = Math.round(seconds);
+        if(String(snum).length ==1 ){
+                  snum = "0" + snum;
+        }
+        document.getElementById("timeDate").innerHTML = "🚀 for&nbsp"+dnum+"&nbspdays";  //此次自定义显示内容
+        document.getElementById("times").innerHTML = hnum + "&nbsphr&nbsp" + mnum + "&nbspmin&nbsp" + snum + "&nbspsec";
+    }  //此次自定义显示内容
+    setInterval("createtime()",250);
+    </script>
+  </div>
+
+  <div class="text-center py-1">   
+    <div>
+      <span>Copyright © 2021</span></a>
+      <a href="https://eliasinworld.github.io/" target="_blank" rel="nofollow noopener">
+       <span>Elias' Blog</span></a>    <br>
+    </div>
 </footer>
 
 
@@ -504,10 +549,18 @@
 
 
 
+  
+<script src="//cdn.jsdelivr.net/gh/bynotes/texiao/source/js/caidai.js"></script>
+<script src="//cdn.jsdelivr.net/gh/bynotes/texiao/source/js/xiaoxingxing.js"></script>
+<script src="//cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<script src="//cdn.jsdelivr.net/gh/metowolf/Metingjs@1.2/dist/Meting.min.js"></script>
+
+
 
 <!-- 主题的启动项 保持在最底部 -->
 <script  src="/js/boot.js" ></script>
 
-
-</body>
+  <!-- 页面点击小红心 -->
+  <script type="text/javascript" src="/js/love.js"></script>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 </html>

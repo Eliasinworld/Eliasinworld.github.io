@@ -37,6 +37,12 @@
 
 <!-- 自定义样式保持在最底部 -->
 
+  
+<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/bynotes/texiao/source/css/shubiao.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/bynotes/texiao/source/css/gundongtiao.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+
+
 
   <script id="fluid-configs">
     var Fluid = window.Fluid || {};
@@ -197,8 +203,8 @@
       
       <p class="h5">2021</p>
     
-    <a href="/2021/08/20/8%E6%9C%8820%E6%97%A5%20%E6%99%9A/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">8月20日 晚</span>
+    <a href="/2021/08/20/8%E6%9C%8820%E6%97%A5%20%E6%99%9A%20Hexo%E6%9B%B4%E6%8D%A2Fluid%E4%B8%BB%E9%A2%98/" class="list-group-item list-group-item-action">
+      <span class="archive-post-title">8月20日 晚 Hexo更换Fluid主题</span>
       <time style="float: right;">08-20</time>
     </a>
   
@@ -257,6 +263,45 @@
   
 
   
+
+  <div>
+    <span id="timeDate">载入天数...</span>
+    <span id="times">载入时分秒...</span>
+    <script>
+    var now = new Date();
+    function createtime(){
+        var grt= new Date("08/19/2021 00:00:00");//此处修改你的建站时间或者网站上线时间
+        now.setTime(now.getTime()+250);
+        days = (now - grt ) / 1000 / 60 / 60 / 24;
+        dnum = Math.floor(days);
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum);
+        hnum = Math.floor(hours);
+        if(String(hnum).length ==1 ){
+            hnum = "0" + hnum;
+        }
+        minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum);
+        mnum = Math.floor(minutes);
+        if(String(mnum).length ==1 ){
+                  mnum = "0" + mnum;
+        }
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum);
+        snum = Math.round(seconds);
+        if(String(snum).length ==1 ){
+                  snum = "0" + snum;
+        }
+        document.getElementById("timeDate").innerHTML = "🚀 for&nbsp"+dnum+"&nbspdays";  //此次自定义显示内容
+        document.getElementById("times").innerHTML = hnum + "&nbsphr&nbsp" + mnum + "&nbspmin&nbsp" + snum + "&nbspsec";
+    }  //此次自定义显示内容
+    setInterval("createtime()",250);
+    </script>
+  </div>
+
+  <div class="text-center py-1">   
+    <div>
+      <span>Copyright © 2021</span></a>
+      <a href="https://eliasinworld.github.io/" target="_blank" rel="nofollow noopener">
+       <span>Elias' Blog</span></a>    <br>
+    </div>
 </footer>
 
 
@@ -357,10 +402,18 @@
 
 
 
+  
+<script src="//cdn.jsdelivr.net/gh/bynotes/texiao/source/js/caidai.js"></script>
+<script src="//cdn.jsdelivr.net/gh/bynotes/texiao/source/js/xiaoxingxing.js"></script>
+<script src="//cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<script src="//cdn.jsdelivr.net/gh/metowolf/Metingjs@1.2/dist/Meting.min.js"></script>
+
+
 
 <!-- 主题的启动项 保持在最底部 -->
 <script  src="/js/boot.js" ></script>
 
-
-</body>
+  <!-- 页面点击小红心 -->
+  <script type="text/javascript" src="/js/love.js"></script>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"model":{"jsonPath":"/live2dw/assets/wanko.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":false},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
 </html>
